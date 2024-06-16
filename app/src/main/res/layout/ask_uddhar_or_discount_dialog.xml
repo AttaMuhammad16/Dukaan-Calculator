@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:backgroundTint="@color/copper"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp"
+    app:cardCornerRadius="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Select Option"
+            android:layout_margin="@dimen/_5sdp"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/uddharTv"
+            android:layout_width="match_parent"
+            android:text="Uddhar"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/discountTv"
+            android:layout_width="match_parent"
+            android:text="Discount"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/roboto"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Dukaan Calculator</string>
+    <string name="webclientId">785209996040-ie2i84ikh77189aeetm3es9u62k5pkdm.apps.googleusercontent.com</string>
+
+    <string name="facebook_app_id">1259984648721957</string>
+    <string name="fb_login_protocol_scheme">fb1234</string>
+    <string name="facebook_client_token">56789</string>
+
+</resources>

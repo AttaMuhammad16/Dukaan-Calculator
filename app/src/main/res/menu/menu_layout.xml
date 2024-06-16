@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/support" android:title="Customer Support" android:icon="@drawable/support"/>
+    <item android:id="@+id/help" android:title="Help Page" android:icon="@drawable/help"/>
+    <item android:id="@+id/how_to_use_app" android:title="How To Use App" android:icon="@drawable/how_to_use_app"/>
+</menu>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        app:strokeColor="@color/navy_blue"
+        app:strokeWidth="1dp"
+        android:backgroundTint="@color/copper"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_13sdp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:layout_weight="1"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Enter Bank Detail" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/accountTitleEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_edt_background"
+                    android:hint="Enter Account Title"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:inputType="text"
+                    android:padding="@dimen/_7sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/ibanEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_edt_background"
+                    android:hint="Enter IBAN"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:inputType="text"
+                    android:padding="@dimen/_7sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray" />
+
+                <EditText
+                    android:id="@+id/accountNumberEdt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/gray_edt_background"
+                    android:hint="Enter Account Number"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:inputType="text"
+                    android:padding="@dimen/_7sdp"
+                    android:paddingStart="@dimen/_20sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/dark_gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_margin="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/cancelBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/dark_gray"
+                    android:text="Cancel" />
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:backgroundTint="@color/mint_green"
+                    android:textColor="@color/black"
+                    android:text="Save" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

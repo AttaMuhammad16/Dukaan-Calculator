@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="card_height">@dimen/_100sdp</dimen>
+    <dimen name="button_margin">@dimen/_3sdp</dimen>
+    <dimen name="card_radius">@dimen/_5sdp</dimen>
+    <dimen name="card_elevation">@dimen/_10sdp</dimen>
+    <dimen name="calculator_button_height">@dimen/_58sdp</dimen>
+
+</resources>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "785209996040",
+    "project_id": "dukaan-calculator",
+    "storage_bucket": "dukaan-calculator.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:785209996040:android:432b556e8f5ecd52b372bd",
+        "android_client_info": {
+          "package_name": "com.dukaancalculator"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNxClKzSq8AhY2ODYV-9g6_DzGM-eC7vU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

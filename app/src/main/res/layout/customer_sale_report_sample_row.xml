@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_2sdp"
+        android:backgroundTint="@color/white"
+        app:cardElevation="@dimen/_2sdp"
+        app:strokeColor="@color/copper">
+
+        <TextView
+            android:id="@+id/customerNameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_bold"
+            android:padding="@dimen/_15sdp"
+            android:text="Atta Muhammad"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp" />
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

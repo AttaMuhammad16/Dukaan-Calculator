@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_color">#4A617A</color>
+    <color name="light_app_color">#97B2CF</color>
+    <color name="green">#42CD7E</color>
+    <color name="dark_green">#177540</color>
+    <color name="edit_text_bg_color">#395471</color>
+    <color name="light_gray">#CDCBCB</color>
+    <color name="gray">#D5CFCF</color>
+    <color name="tool_bar_color">#06305C</color>
+    <color name="dark_gray">#6F6B6B</color>
+    <color name="little_dark_gray">#AAA8A8</color>
+    <color name="very_dark_gray">#353434</color>
+
+    <color name="navy_blue">#001F3F</color>
+    <color name="copper">#B76E79</color>
+    <color name="mint_green">#93F393</color>
+    <color name="dark_green_u">#2F4F4F</color>
+    <color name="tertiary_copper">#B76E2C</color>
+
+<!--    kharcha -->
+    <color name="kharcha_background">#E0E0E0</color>
+    <color name="kharcha_blue">#007BFF</color>
+    <color name="dark_red">#BC0C0C</color>
+    <color name="light_red">#FADADE</color>
+
+
+<!--  kharcha  items colors -->
+
+    <color name="item1">#001F3F</color>
+    <color name="item2">#B76E79</color>
+    <color name="item3">#93F393</color>
+    <color name="item4">#2F4F4F</color>
+    <color name="item5">#B76E2C</color>
+    <color name="item6">#42CD7E</color>
+    <color name="item7">#177540</color>
+    <color name="item8">#395471</color>
+
+</resources>
