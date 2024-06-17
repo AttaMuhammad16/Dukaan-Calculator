@@ -67,4 +67,5 @@ class ReportsActivity : AppCompatActivity() {
     fun startNewActivity(clazz: Class<*>){
         startActivity(Intent(this,clazz))
     }
+
 }
