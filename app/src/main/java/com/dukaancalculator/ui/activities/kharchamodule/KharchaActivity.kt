@@ -22,10 +22,12 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
+import com.dukaancalculator.Utils.MyConstants.attaMuhammadNumber
 import com.dukaancalculator.Utils.MyUtils.convertDateToDayMonthYearFormat
 import com.dukaancalculator.Utils.MyUtils.convertToYearMonthDayFormate
 import com.dukaancalculator.Utils.MyUtils.getCurrentDate
 import com.dukaancalculator.Utils.MyUtils.increaseAndDecreaseDay
+import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showDatePickerDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
@@ -43,6 +45,7 @@ import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.lymors.lycommons.utils.MyExtensions.onTextChange
 import com.lymors.lycommons.utils.MyExtensions.showToast
+import com.lymors.lycommons.utils.Utils.shareText
 import com.lymors.lycommons.utils.Utils.showKeyboard
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -141,6 +144,26 @@ class KharchaActivity : AppCompatActivity() {
 
         binding.searchEdt.onTextChange {
             filterList(it)
+        }
+
+
+        binding.support.setOnClickListener {
+            sendMessageToWhatsApp(this, attaMuhammadNumber,"")
+        }
+        
+        binding.shareImg.setOnClickListener {
+            shareText("\uD83D\uDED2 Welcome to Dukaan Calculator! \uD83D\uDCF1\uD83D\uDCBC\n" +
+                    "\n" +
+                    "Discover the ultimate solution for managing your store efficiently! \uD83D\uDE80\n" +
+                    "\n" +
+                    "\uD83D\uDCCA Track sales, manage inventory, and create beautiful receipts effortlessly with Dukaan Calculator. \uD83D\uDCDD\uD83D\uDCBC\n" +
+                    "\n" +
+                    "\uD83D\uDD0D Never miss a sale again with our powerful inventory management features! \uD83D\uDCA1\n" +
+                    "\n" +
+                    "\uD83D\uDCA1 Download Dukaan Calculator now for a hassle-free store management experience! \uD83D\uDCF2\n" +
+                    "\n" +
+                    "https://play.google.com/store/apps/details?id=com.dukaancalculator\n\n" +
+                    "Join thousands of satisfied users who trust Dukaan Calculator for their store management needs! \uD83D\uDCBC✨","Dukaan Calculator")
         }
 
     }

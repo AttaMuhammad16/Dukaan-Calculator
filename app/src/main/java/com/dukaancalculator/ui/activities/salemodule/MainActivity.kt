@@ -1,14 +1,11 @@
 package com.dukaancalculator.ui.activities.salemodule
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentTransaction
 import com.dukaancalculator.R
-import com.dukaancalculator.Utils.MyConstants.adbulRaufPhoneNumber
-import com.dukaancalculator.Utils.MyUtils.logT
+import com.dukaancalculator.Utils.MyConstants.attaMuhammadNumber
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityMainBinding
@@ -60,7 +57,7 @@ class MainActivity : AppCompatActivity() {
 
 
         binding.support.setOnClickListener {
-            sendMessageToWhatsApp(this@MainActivity,adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this@MainActivity,attaMuhammadNumber,"")
         }
 
         binding.shareImg.setOnClickListener {
@@ -92,17 +89,16 @@ class MainActivity : AppCompatActivity() {
         binding.navDrwer.setNavigationItemSelectedListener {
             when (it.itemId) {
                 R.id.support -> {
+                    sendMessageToWhatsApp(this@MainActivity, attaMuhammadNumber,"")
                 }
                 R.id.help ->{
-                }
-                R.id.how_to_use_app ->{
+                    sendMessageToWhatsApp(this@MainActivity, attaMuhammadNumber,"")
                 }
             }
             true
         }
-
-
     }
+
 
     private fun replaceFragment(fragment: Fragment) {
         val tag = fragment.javaClass.simpleName
@@ -115,8 +111,6 @@ class MainActivity : AppCompatActivity() {
         }
         transaction.commitNowAllowingStateLoss()
     }
-
-
 
 }
 

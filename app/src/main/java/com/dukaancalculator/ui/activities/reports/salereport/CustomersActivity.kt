@@ -6,6 +6,7 @@ import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.dukaancalculator.Utils.MyConstants
+import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
@@ -53,6 +54,11 @@ class CustomersActivity : AppCompatActivity() {
         binding.searchEdt.onTextChange {
             filterList(it)
         }
+
+        binding.support.setOnClickListener {
+            sendMessageToWhatsApp(this,MyConstants.attaMuhammadNumber,"")
+        }
+
 
     }
 

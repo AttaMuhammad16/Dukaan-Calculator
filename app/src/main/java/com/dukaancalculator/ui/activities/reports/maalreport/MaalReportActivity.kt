@@ -48,7 +48,7 @@ class MaalReportActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
 

@@ -10,6 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
+import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityCustomersBinding
@@ -60,6 +61,9 @@ class SuppliersActivity : AppCompatActivity() {
             filterList(it)
         }
 
+        binding.support.setOnClickListener {
+            sendMessageToWhatsApp(this,MyConstants.attaMuhammadNumber,"")
+        }
     }
 
     private fun filterList(query: String) {

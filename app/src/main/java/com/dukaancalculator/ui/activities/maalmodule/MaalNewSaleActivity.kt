@@ -22,14 +22,12 @@ import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityMaalNewSaleBinding
-import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.dukaancalculator.ui.models.maalmodels.DeliveryInformationModel
 import com.dukaancalculator.ui.models.maalmodels.MaalReportModel
 import com.dukaancalculator.ui.models.maalmodels.NewMaalModel
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
-import com.google.android.play.integrity.internal.k
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.lymors.lycommons.utils.MyExtensions.onTextChange
@@ -99,7 +97,7 @@ class MaalNewSaleActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
         binding.backImg.setOnClickListener {
@@ -120,22 +118,22 @@ class MaalNewSaleActivity : AppCompatActivity() {
             givenAmount=enteredAmount
         }
 
-        binding.newInvoiceBtn.setOnClickListener {
-            if (givenAmount<totalAmount){
-                if (UddharOrDiscount.isEmpty()){
-                    showToast("Select Uddhar or Discount")
-                }else{
-                    showCustomerDialog(supplierNames)
-                }
-            }
-        }
+//        binding.newInvoiceBtn.setOnClickListener {
+//            if (givenAmount<totalAmount){
+//                if (UddharOrDiscount.isEmpty()){
+//                    showToast("Select Uddhar or Discount")
+//                }else{
+//                    showCustomerDialog(supplierNames)
+//                }
+//            }
+//        }
 
         binding.whatsAppImg.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this@MaalNewSaleActivity, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this@MaalNewSaleActivity, MyConstants.attaMuhammadNumber, "")
         }
 
         binding.smsImg.setOnClickListener {
-            showSmsDialog(MyConstants.adbulRaufPhoneNumber)
+            showSmsDialog(MyConstants.attaMuhammadNumber)
         }
 
 

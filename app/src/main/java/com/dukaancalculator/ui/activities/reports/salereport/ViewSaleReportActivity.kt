@@ -2,12 +2,8 @@ package com.dukaancalculator.ui.activities.reports.salereport
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
@@ -19,7 +15,6 @@ import com.lymors.lycommons.utils.MyExtensions.showToast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
-import javax.inject.Inject
 
 
 @AndroidEntryPoint
@@ -39,7 +34,7 @@ class ViewSaleReportActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
 

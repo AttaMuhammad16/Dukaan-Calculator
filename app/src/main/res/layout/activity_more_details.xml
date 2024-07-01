@@ -75,7 +75,7 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:inputType="phone"
                 android:background="@drawable/edt_background"
-                android:hint="Phone"
+                android:hint="Enter PhoneNumber with country code"
                 android:padding="@dimen/_10sdp"
                 android:fontFamily="@font/roboto"
 

@@ -27,6 +27,7 @@
             <ImageView
                 android:id="@+id/backImg"
                 android:layout_width="@dimen/_25sdp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_height="@dimen/_25sdp"
                 android:src="@drawable/back_arrow" />
 
@@ -46,6 +47,7 @@
                 android:id="@+id/support"
                 android:layout_width="@dimen/_28sdp"
                 android:src="@drawable/support"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:layout_height="@dimen/_28sdp"/>
 
@@ -53,6 +55,7 @@
                 android:id="@+id/shareImg"
                 android:layout_width="@dimen/_25sdp"
                 android:layout_height="@dimen/_25sdp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_marginEnd="@dimen/_10sdp"
                 android:src="@drawable/share_img" />
 

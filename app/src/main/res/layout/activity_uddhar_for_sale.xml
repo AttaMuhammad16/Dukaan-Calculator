@@ -21,6 +21,7 @@
             android:id="@+id/backImg"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:src="@drawable/back_arrow" />
 
         <TextView
@@ -38,6 +39,7 @@
             android:id="@+id/support"
             android:layout_width="@dimen/_28sdp"
             android:layout_height="@dimen/_28sdp"
+            android:foreground="?attr/selectableItemBackgroundBorderless"
             android:layout_gravity="end"
             android:layout_marginEnd="@dimen/_10sdp"
             android:src="@drawable/support" />

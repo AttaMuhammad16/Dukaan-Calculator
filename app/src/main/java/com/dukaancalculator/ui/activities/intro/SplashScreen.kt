@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
@@ -24,6 +25,7 @@ class SplashScreen : AppCompatActivity() {
 
         Handler().postDelayed({
             if (auth.currentUser!=null){
+                Log.i("TAG", "onCreate user uid :${auth.currentUser!!.uid} ")
                 startActivity(Intent(this@SplashScreen, MainActivity::class.java))
                 finish()
             }else{

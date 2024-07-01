@@ -18,7 +18,6 @@ import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils.calculateAmount
 import com.dukaancalculator.Utils.MyUtils.calculatePercentageChange
-import com.dukaancalculator.Utils.MyUtils.checkProductNamesEdt
 import com.dukaancalculator.Utils.MyUtils.getCurrentDateTime
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
@@ -95,7 +94,7 @@ class TotalSaleProductActivity : AppCompatActivity() {
 
         // support
         binding.support.setOnClickListener {
-            sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber,"")
         }
 
         binding.totalItems.text=listExp.size.toString()

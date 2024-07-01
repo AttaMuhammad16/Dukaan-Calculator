@@ -18,7 +18,6 @@ import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityUddharForSaleBinding
 import com.dukaancalculator.databinding.SaleRemainingPaymentSampleRowBinding
-import com.dukaancalculator.ui.models.salemodels.NewSaleModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -65,7 +64,7 @@ class UddharForSaleActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            sendMessageToWhatsApp(this@UddharForSaleActivity,MyConstants.adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this@UddharForSaleActivity,MyConstants.attaMuhammadNumber,"")
         }
 
         binding.backImg.setOnClickListener {

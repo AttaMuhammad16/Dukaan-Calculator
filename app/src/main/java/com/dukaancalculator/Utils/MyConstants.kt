@@ -3,8 +3,8 @@ package com.dukaancalculator.Utils
 import com.google.firebase.auth.FirebaseAuth
 
 object MyConstants {
-    const val adbulRaufPhoneNumber="+923072223305"
 
+    const val attaMuhammadNumber="+923034805685"
 
 
     // sale module paths
@@ -37,10 +37,12 @@ object MyConstants {
 
 
 
+
     // kharcha module
     fun getKharchaPath(auth:FirebaseAuth):String{
         return "Kharcha/${auth.currentUser!!.uid}/"
     }
+
 
 
 }

@@ -2,18 +2,13 @@ package com.dukaancalculator.ui.activities.reports.maalreport
 
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityViewMaalReportBinding
-import com.dukaancalculator.databinding.ProductCounterSampleRowBinding
 import com.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.ui.models.maalmodels.MaalReportModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
@@ -107,7 +102,7 @@ class ViewMaalReportActivity : AppCompatActivity() {
 
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
 

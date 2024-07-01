@@ -21,7 +21,6 @@ import com.dukaancalculator.Utils.MyConstants.getNewSalePath
 import com.dukaancalculator.Utils.MyConstants.getSaleReportPath
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.getCurrentDate
-import com.dukaancalculator.Utils.MyUtils.logT
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
@@ -87,7 +86,7 @@ class NewSaleActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber,"")
         }
 
         binding.backImg.setOnClickListener {
@@ -108,15 +107,15 @@ class NewSaleActivity : AppCompatActivity() {
             givenAmount=enteredAmount
         }
 
-        binding.newSaleBtn.setOnClickListener {
-            if (givenAmount<totalAmount){
-                if (UddharOrDiscount.isEmpty()){
-                    showToast("Enter Uddhar or Discount")
-                }else{
-                    showCustomerDialog(customerNames)
-                }
-            }
-        }
+//        binding.newSaleBtn.setOnClickListener {
+//            if (givenAmount<totalAmount){
+//                if (UddharOrDiscount.isEmpty()){
+//                    showToast("Enter Uddhar or Discount")
+//                }else{
+//                    showCustomerDialog(customerNames)
+//                }
+//            }
+//        }
 
         binding.saveImg.setOnClickListener {
             if(givenAmount>=totalAmount){
@@ -136,7 +135,7 @@ class NewSaleActivity : AppCompatActivity() {
 
 
         binding.whatsAppImg.setOnClickListener {
-            sendMessageToWhatsApp(this@NewSaleActivity,MyConstants.adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this@NewSaleActivity,MyConstants.attaMuhammadNumber,"")
         }
 
         smsPermission(this@NewSaleActivity,12)
@@ -173,7 +172,7 @@ Payment Type:   $UddharOrDiscount
 
 Thank you visit again 
 """.trimIndent()
-showSmsDialog(MyConstants.adbulRaufPhoneNumber, message) }
+showSmsDialog(MyConstants.attaMuhammadNumber, message) }
 
         binding.viewAndPrint.setOnClickListener {
              startReceiptActivity()

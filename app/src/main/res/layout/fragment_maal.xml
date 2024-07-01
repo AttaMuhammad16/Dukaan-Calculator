@@ -77,6 +77,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/button_margin"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:layout_weight="1"
                 android:backgroundTint="@color/light_gray"
                 android:theme="@style/Theme.MaterialComponents.Light"
@@ -102,6 +103,8 @@
                 android:layout_height="match_parent"
                 android:layout_margin="@dimen/button_margin"
                 android:layout_weight="1"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+
                 android:backgroundTint="@color/light_gray"
                 android:theme="@style/Theme.MaterialComponents.Light"
                 app:cardCornerRadius="@dimen/card_radius"
@@ -145,6 +148,7 @@
                         android:layout_height="match_parent"
                         android:layout_margin="@dimen/button_margin"
                         android:layout_weight="1"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
                         app:cardElevation="@dimen/card_elevation">
@@ -172,6 +176,8 @@
                         android:layout_margin="@dimen/button_margin"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardCornerRadius="@dimen/card_radius"
                         app:cardElevation="@dimen/card_elevation">
 
@@ -197,6 +203,8 @@
                         android:layout_margin="@dimen/button_margin"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardCornerRadius="@dimen/card_radius"
                         app:cardElevation="@dimen/card_elevation">
 
@@ -230,6 +238,8 @@
                         android:layout_margin="@dimen/button_margin"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardCornerRadius="@dimen/card_radius"
                         app:cardElevation="@dimen/card_elevation">
 
@@ -257,6 +267,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -285,6 +297,8 @@
                         android:backgroundTint="@color/white"
                         android:fontFamily="@font/roboto"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -318,6 +332,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -345,6 +361,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -372,6 +390,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -403,6 +423,8 @@
                     <com.google.android.material.card.MaterialCardView
                         android:layout_width="0dp"
                         android:layout_height="match_parent"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         android:layout_margin="@dimen/button_margin"
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
@@ -433,6 +455,8 @@
                         android:layout_weight="1"
                         android:backgroundTint="@color/white"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
 
@@ -461,6 +485,8 @@
                         android:backgroundTint="@color/light_gray"
                         android:theme="@style/Theme.MaterialComponents.Light"
                         app:cardCornerRadius="@dimen/card_radius"
+                        android:foreground="?attr/selectableItemBackgroundBorderless"
+
                         app:cardElevation="@dimen/card_elevation">
 
                         <TextView
@@ -496,6 +522,8 @@
                     android:layout_margin="@dimen/button_margin"
                     android:backgroundTint="@color/light_gray"
                     android:theme="@style/Theme.MaterialComponents.Light"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+
                     app:cardCornerRadius="@dimen/card_radius"
                     app:cardElevation="@dimen/card_elevation">
 
@@ -522,6 +550,8 @@
                     android:backgroundTint="@color/light_gray"
                     android:theme="@style/Theme.MaterialComponents.Light"
                     app:cardCornerRadius="@dimen/card_radius"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+
                     app:cardElevation="@dimen/card_elevation">
 
 
@@ -547,6 +577,8 @@
                     android:backgroundTint="@color/tool_bar_color"
                     android:theme="@style/Theme.MaterialComponents.Light"
                     app:cardCornerRadius="@dimen/card_radius"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+
                     app:cardElevation="@dimen/card_elevation">
 
 
@@ -585,6 +617,8 @@
                 android:backgroundTint="@color/tool_bar_color"
                 app:cardCornerRadius="@dimen/card_radius"
                 app:cardElevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+
                 app:strokeColor="@color/tool_bar_color">
 
 
@@ -612,6 +646,8 @@
                 android:backgroundTint="@color/mint_green"
                 app:cardCornerRadius="@dimen/card_radius"
                 app:cardElevation="@dimen/card_elevation"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+
                 app:strokeColor="@color/mint_green">
 
                 <TextView

@@ -5,24 +5,18 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityMaalReceiptBinding
-import com.dukaancalculator.databinding.ActivityReceiptBinding
 import com.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.lymors.lycommons.utils.MyExtensions.showToast
-import com.lymors.lycommons.utils.MyExtensions.toIntOrDefault
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -92,7 +86,7 @@ class MaalReceiptActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
         lifecycleScope.launch {

@@ -47,6 +47,7 @@
                 android:layout_width="@dimen/_28sdp"
                 android:layout_height="@dimen/_28sdp"
                 android:layout_marginEnd="@dimen/_10sdp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
                 android:src="@drawable/support" />
 
         </LinearLayout>

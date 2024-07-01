@@ -14,7 +14,6 @@ import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityUddharForMaalBinding
 import com.dukaancalculator.databinding.MaalRemainingPaymentSampleRowBinding
-import com.dukaancalculator.ui.models.maalmodels.NewMaalModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
@@ -43,7 +42,7 @@ class UddharForMaalActivity : AppCompatActivity() {
         path=MyConstants.getNewMaalPath(auth)
 
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
         binding.backImg.setOnClickListener {

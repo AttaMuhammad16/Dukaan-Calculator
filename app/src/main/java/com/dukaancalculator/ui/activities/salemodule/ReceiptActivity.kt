@@ -3,14 +3,11 @@ package com.dukaancalculator.ui.activities.salemodule
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils.createPDFReceipt
-import com.dukaancalculator.Utils.MyUtils.generateReceiptNumber
-import com.dukaancalculator.Utils.MyUtils.getCurrentDateTime
 import com.dukaancalculator.Utils.MyUtils.requestWritePermission
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
@@ -22,7 +19,6 @@ import com.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.dukaancalculator.ui.viewmodel.SaleViewModel
 import com.lymors.lycommons.utils.MyExtensions.showToast
-import com.lymors.lycommons.utils.MyExtensions.toIntOrDefault
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.async
 import kotlinx.coroutines.launch
@@ -73,7 +69,7 @@ class ReceiptActivity : AppCompatActivity() {
         }
 
         binding.support.setOnClickListener {
-            sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber,"")
+            sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber,"")
         }
 
         lifecycleScope.launch {

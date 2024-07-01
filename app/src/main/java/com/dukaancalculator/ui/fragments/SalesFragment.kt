@@ -37,6 +37,7 @@ class SalesFragment : Fragment() {
     var data = StringBuilder()
     var exp = ArrayList<String>()
     lateinit var list:ArrayList<String>
+    
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View {
         return binding.root
     }
@@ -54,6 +55,7 @@ class SalesFragment : Fragment() {
                 it.logT("fromViewmodel data:")
             }
         }
+
         lifecycleScope.launch {
             saleViewModel.topFlow.collect {
                 binding.total.text = it

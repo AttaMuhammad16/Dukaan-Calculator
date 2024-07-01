@@ -18,7 +18,6 @@ import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityTotalMaalBinding
-import com.dukaancalculator.ui.activities.salemodule.BankPaymentScreen
 import com.dukaancalculator.ui.models.maalmodels.DeliveryInformationModel
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
@@ -103,7 +102,7 @@ class TotalMaalActivity : AppCompatActivity() {
 
         // support
         binding.support.setOnClickListener {
-            MyUtils.sendMessageToWhatsApp(this, MyConstants.adbulRaufPhoneNumber, "")
+            MyUtils.sendMessageToWhatsApp(this, MyConstants.attaMuhammadNumber, "")
         }
 
         binding.totalItems.text=listExp.size.toString()

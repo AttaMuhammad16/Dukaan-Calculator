@@ -9,7 +9,7 @@
         android:id="@+id/cardView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_2sdp"
+        android:layout_margin="@dimen/_5sdp"
         android:backgroundTint="@color/white"
         app:cardElevation="@dimen/_2sdp"
         app:strokeColor="@color/copper">

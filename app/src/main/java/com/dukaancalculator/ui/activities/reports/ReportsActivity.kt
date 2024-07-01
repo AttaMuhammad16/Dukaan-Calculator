@@ -6,8 +6,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import com.dukaancalculator.Utils.MyConstants
+import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.databinding.ActivityReportsBinding
+import com.dukaancalculator.ui.activities.kharchamodule.KharchaActivity
 import com.dukaancalculator.ui.activities.reports.maalreport.SuppliersActivity
 import com.dukaancalculator.ui.activities.reports.salereport.CustomersActivity
 import com.dukaancalculator.ui.activities.reports.salereport.SaleReportActivity
@@ -60,6 +62,14 @@ class ReportsActivity : AppCompatActivity() {
 
         binding.udhaarReportCard.setOnClickListener {
             startActivity(Intent(this@ReportsActivity,IsSaleOrMaalUddharActivity::class.java))
+        }
+
+        binding.support.setOnClickListener {
+            sendMessageToWhatsApp(this@ReportsActivity,MyConstants.attaMuhammadNumber,"")
+        }
+
+        binding.kharchaReportCard.setOnClickListener{
+            startActivity(Intent(this@ReportsActivity, KharchaActivity::class.java))
         }
 
     }
