@@ -31,7 +31,6 @@ class SalesFragment : Fragment() {
     @Inject
     lateinit var saleViewModel: SaleViewModel
 
-
     private val binding by viewBinding(FragmentSalesBinding::inflate)
 
     var data = StringBuilder()
@@ -147,10 +146,6 @@ class SalesFragment : Fragment() {
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        fragmentManager?.popBackStack()
-    }
 
     private fun send(view: View){
         val t = view as TextView
@@ -162,8 +157,6 @@ class SalesFragment : Fragment() {
         return str.endsWith("÷") || str.endsWith("×") || str.endsWith("-") || str.endsWith("%")
 
     }
-
-
 
     // Extension function to check if a String is numeric
     fun String.isNumeric(): Boolean {
@@ -181,10 +174,4 @@ class SalesFragment : Fragment() {
         return df.format(number)
     }
 
-    override fun onSaveInstanceState(outState: Bundle) {
-//        super.onSaveInstanceState(outState)
-    }
-
 }
-
-

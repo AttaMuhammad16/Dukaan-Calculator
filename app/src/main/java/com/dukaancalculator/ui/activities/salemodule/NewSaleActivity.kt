@@ -25,7 +25,6 @@ import com.dukaancalculator.Utils.MyUtils.getCurrentDate
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
-import com.dukaancalculator.Utils.MyUtils.smsPermission
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.ui.models.salemodels.NewSaleModel
 import com.dukaancalculator.ui.models.salemodels.SaleReportModel
@@ -55,7 +54,7 @@ class NewSaleActivity : AppCompatActivity() {
     @Inject
     lateinit var auth:FirebaseAuth
     var resultAmount=0
-    var UddharOrDiscount=""
+    var UddharOrDiscount="Uddhar"
     var receiptNumber=""
 
     var customerNames = listOf<String>()
@@ -138,7 +137,7 @@ class NewSaleActivity : AppCompatActivity() {
             sendMessageToWhatsApp(this@NewSaleActivity,MyConstants.attaMuhammadNumber,"")
         }
 
-        smsPermission(this@NewSaleActivity,12)
+//        smsPermission(this@NewSaleActivity,12)
 
         binding.sms.setOnClickListener {
             val productsString = listOfProduct.joinToString(separator = "\n") {

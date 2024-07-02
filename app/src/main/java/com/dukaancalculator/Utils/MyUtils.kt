@@ -264,15 +264,15 @@ object MyUtils {
         }
     }
 
-    fun smsPermission(activity: Activity, requestCode: Int) {
-        if (ContextCompat.checkSelfPermission(activity, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(activity, arrayOf(
-                Manifest.permission.SEND_SMS,
-                Manifest.permission.RECEIVE_SMS), requestCode)
-        } else {
-            // Permission already granted
-        }
-    }
+//    fun smsPermission(activity: Activity, requestCode: Int) {
+//        if (ContextCompat.checkSelfPermission(activity, Manifest.permission.SEND_SMS) != PackageManager.PERMISSION_GRANTED) {
+//            ActivityCompat.requestPermissions(activity, arrayOf(
+//                Manifest.permission.SEND_SMS,
+//                Manifest.permission.RECEIVE_SMS), requestCode)
+//        } else {
+//            // Permission already granted
+//        }
+//    }
 
 
     fun checkProductNamesEdt(productModelList: List<ProductModel>, listOfEditText: List<EditText>, context: Activity): Boolean {

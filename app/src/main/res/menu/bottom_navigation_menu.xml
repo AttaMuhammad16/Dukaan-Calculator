@@ -13,7 +13,7 @@
         android:title="Maal" />
 
     <item
-        android:id="@+id/reports"
+        android:id="@+id/uddhar"
         android:icon="@drawable/report"
         android:iconTint="@color/white"
         android:title="Udhaar"  />

@@ -59,11 +59,10 @@
             </LinearLayout>
         </androidx.appcompat.widget.Toolbar>
 
-        <FrameLayout
-            android:id="@+id/frame_layout"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layerType="software"
             app:layout_constraintBottom_toTopOf="@+id/bottom_bar"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

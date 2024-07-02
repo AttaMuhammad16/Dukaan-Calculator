@@ -56,7 +56,7 @@ class MaalNewSaleActivity : AppCompatActivity() {
     lateinit var auth: FirebaseAuth
 
     var resultAmount=0
-    var UddharOrDiscount=""
+    var UddharOrDiscount="Uddhar"
 
     var supplierNames = listOf<String>()
     var currentDate= ""

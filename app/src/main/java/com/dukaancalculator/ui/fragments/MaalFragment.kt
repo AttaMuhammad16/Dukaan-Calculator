@@ -143,10 +143,6 @@ class MaalFragment : Fragment() {
 
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-        fragmentManager?.popBackStack()
-    }
 
     private fun send(view: View){
         val t = view as TextView

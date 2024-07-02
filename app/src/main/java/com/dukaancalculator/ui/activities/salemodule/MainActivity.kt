@@ -4,11 +4,13 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import androidx.viewpager2.widget.ViewPager2
 import com.atta.dukaancalculator.R
 import com.atta.dukaancalculator.databinding.ActivityMainBinding
 import com.dukaancalculator.Utils.MyConstants.attaMuhammadNumber
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
+import com.dukaancalculator.ViewPagerAdapter
 import com.dukaancalculator.ui.fragments.MaalFragment
 import com.dukaancalculator.ui.fragments.MoreFragment
 import com.dukaancalculator.ui.fragments.UdhharFragment
@@ -31,29 +33,38 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         statusBarColor()
+        val viewPager=binding.viewPager
+        val adapter = ViewPagerAdapter(this)
+        viewPager.adapter = adapter
+
+        viewPager.registerOnPageChangeCallback(object : ViewPager2.OnPageChangeCallback() {
+            override fun onPageSelected(position: Int) {
+                super.onPageSelected(position)
+                binding.bottomBar.menu.getItem(position).isChecked = true
+            }
+        })
 
         binding.bottomBar.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
-                R.id.reports -> {
-                    replaceFragment(UdhharFragment())
-                    true
-                }
                 R.id.sales -> {
-                    replaceFragment(SalesFragment())
+                    viewPager.currentItem = 0
                     true
                 }
                 R.id.maal -> {
-                    replaceFragment(MaalFragment())
+                    viewPager.currentItem = 1
+                    true
+                }
+                R.id.uddhar -> {
+                    viewPager.currentItem = 2
                     true
                 }
                 R.id.more -> {
-                    replaceFragment(MoreFragment())
+                    viewPager.currentItem = 3
                     true
                 }
                 else -> false
             }
         }
-
 
         binding.support.setOnClickListener {
             sendMessageToWhatsApp(this@MainActivity,attaMuhammadNumber,"")
@@ -98,22 +109,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    override fun onResume() {
-        super.onResume()
-        replaceFragment(SalesFragment())
-    }
-
-    private fun replaceFragment(fragment: Fragment) {
-        val tag = fragment.javaClass.simpleName
-        val existingFragment = supportFragmentManager.findFragmentByTag(tag)
-        val transaction = supportFragmentManager.beginTransaction()
-        if (existingFragment != null) {
-            transaction.replace(R.id.frame_layout, existingFragment, tag)
-        } else {
-            transaction.replace(R.id.frame_layout, fragment, tag)
-        }
-        transaction.commitAllowingStateLoss()
-    }
 
 }
 

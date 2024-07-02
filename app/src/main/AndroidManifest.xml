@@ -139,7 +139,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.dukaancalculator.provider"
+            android:authorities="com.atta.dukaancalculator.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
