@@ -20,7 +20,10 @@ import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityKharchaBinding
+import com.atta.dukaancalculator.databinding.KharchaGridSampleRowBinding
+import com.atta.dukaancalculator.databinding.KharchaSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyConstants.attaMuhammadNumber
 import com.dukaancalculator.Utils.MyUtils.convertDateToDayMonthYearFormat
@@ -31,9 +34,6 @@ import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showDatePickerDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityKharchaBinding
-import com.dukaancalculator.databinding.KharchaGridSampleRowBinding
-import com.dukaancalculator.databinding.KharchaSampleRowBinding
 import com.dukaancalculator.ui.adapters.CustomSpinnerAdapter
 import com.dukaancalculator.ui.models.commonmodels.UserModel
 import com.dukaancalculator.ui.models.kharcha.ExpenseCategoryModel

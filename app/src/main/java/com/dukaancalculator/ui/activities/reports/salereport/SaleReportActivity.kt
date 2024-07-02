@@ -6,14 +6,14 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivitySaleReportBinding
+import com.atta.dukaancalculator.databinding.SaleReportSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivitySaleReportBinding
-import com.dukaancalculator.databinding.SaleReportSampleRowBinding
 import com.dukaancalculator.ui.models.salemodels.SaleReportModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
@@ -26,7 +26,7 @@ import javax.inject.Inject
 @AndroidEntryPoint
 class SaleReportActivity : AppCompatActivity() {
 
-    lateinit var binding:ActivitySaleReportBinding
+    lateinit var binding: ActivitySaleReportBinding
     var bundleCustomerName:String=""
     var saleReportPath:String=""
     @Inject
@@ -138,7 +138,8 @@ class SaleReportActivity : AppCompatActivity() {
 
     fun setRecyclerView(list:List<SaleReportModel>){
 
-        binding.recyclerView.setData(list,SaleReportSampleRowBinding::inflate){binding, item, position ->
+        binding.recyclerView.setData(list,
+            SaleReportSampleRowBinding::inflate){ binding, item, position ->
 
             binding.receiptNumberTv.text=item.receiptNumber
             binding.dateTv.text=item.date

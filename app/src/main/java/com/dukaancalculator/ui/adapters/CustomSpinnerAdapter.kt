@@ -6,9 +6,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.TextView
-import androidx.cardview.widget.CardView
 import androidx.constraintlayout.widget.ConstraintLayout
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
 import com.dukaancalculator.ui.models.kharcha.ExpenseCategoryModel
 
 class CustomSpinnerAdapter(

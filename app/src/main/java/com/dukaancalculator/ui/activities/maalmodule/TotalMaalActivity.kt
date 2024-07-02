@@ -13,11 +13,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityTotalMaalBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityTotalMaalBinding
 import com.dukaancalculator.ui.models.maalmodels.DeliveryInformationModel
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.dukaancalculator.ui.viewmodel.MaalViewModel

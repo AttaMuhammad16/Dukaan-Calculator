@@ -8,6 +8,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityUddharForSaleBinding
+import com.atta.dukaancalculator.databinding.SaleRemainingPaymentSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.getFormattedDateAndTime
@@ -16,8 +18,6 @@ import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityUddharForSaleBinding
-import com.dukaancalculator.databinding.SaleRemainingPaymentSampleRowBinding
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
@@ -77,7 +77,8 @@ class UddharForSaleActivity : AppCompatActivity() {
             progress.dismiss()
             val filteredList = list.filter { it.uddharOrDiscount == "Uddhar" }
             val againFiltered = filteredList.filter { it.uddharOrDiscount != "done" }
-            binding.recyclerView.setData(againFiltered,SaleRemainingPaymentSampleRowBinding::inflate){binding, item, position ->
+            binding.recyclerView.setData(againFiltered,
+                SaleRemainingPaymentSampleRowBinding::inflate){ binding, item, position ->
 
                 binding.customerName.text="Customer Name: ${item.customerName}"
                 binding.amountToTake.text="Amount: ${item.uddharOrDiscountAmount} Rs"

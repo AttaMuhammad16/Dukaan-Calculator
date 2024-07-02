@@ -2,16 +2,15 @@ package com.dukaancalculator.ui.activities.reports.salereport
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityCustomersBinding
+import com.atta.dukaancalculator.databinding.CustomerSaleReportSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityCustomersBinding
-import com.dukaancalculator.databinding.CustomerSaleReportSampleRowBinding
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.lymors.lycommons.utils.MyExtensions.onTextChange

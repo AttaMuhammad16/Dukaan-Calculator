@@ -4,11 +4,11 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityMainBinding
 import com.dukaancalculator.Utils.MyConstants.attaMuhammadNumber
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityMainBinding
 import com.dukaancalculator.ui.fragments.MaalFragment
 import com.dukaancalculator.ui.fragments.MoreFragment
 import com.dukaancalculator.ui.fragments.UdhharFragment
@@ -31,7 +31,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         statusBarColor()
-        replaceFragment(SalesFragment())
 
         binding.bottomBar.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -99,6 +98,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        replaceFragment(SalesFragment())
+    }
 
     private fun replaceFragment(fragment: Fragment) {
         val tag = fragment.javaClass.simpleName
@@ -109,7 +112,7 @@ class MainActivity : AppCompatActivity() {
         } else {
             transaction.replace(R.id.frame_layout, fragment, tag)
         }
-        transaction.commitNowAllowingStateLoss()
+        transaction.commitAllowingStateLoss()
     }
 
 }

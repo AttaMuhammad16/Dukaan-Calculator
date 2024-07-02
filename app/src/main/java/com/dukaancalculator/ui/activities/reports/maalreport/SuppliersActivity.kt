@@ -2,22 +2,15 @@ package com.dukaancalculator.ui.activities.reports.maalreport
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivitySuppliersBinding
+import com.atta.dukaancalculator.databinding.SupplierMaalReportSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityCustomersBinding
-import com.dukaancalculator.databinding.ActivitySuppliersBinding
-import com.dukaancalculator.databinding.CustomerSaleReportSampleRowBinding
-import com.dukaancalculator.databinding.SupplierMaalReportSampleRowBinding
-import com.dukaancalculator.ui.activities.reports.salereport.SaleReportActivity
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.lymors.lycommons.utils.MyExtensions.onTextChange

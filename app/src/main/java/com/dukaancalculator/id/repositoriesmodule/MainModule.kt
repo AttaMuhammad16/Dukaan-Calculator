@@ -4,7 +4,6 @@ import com.dukaancalculator.data.authrepository.AuthRepositoryLocal
 import com.dukaancalculator.data.authrepository.AuthRepositoryLocalImplLocal
 import com.dukaancalculator.data.mainrepository.MainRepositoryLocal
 import com.dukaancalculator.data.mainrepository.MainRepositoryLocalImpl
-import com.dukaancalculator.ui.models.kharcha.KharchaModel
 import com.dukaancalculator.ui.viewmodel.KharchaViewModel
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel

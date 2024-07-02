@@ -8,8 +8,8 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.FragmentMaalBinding
 import com.dukaancalculator.Utils.MyUtils.logT
-import com.dukaancalculator.databinding.FragmentMaalBinding
 import com.dukaancalculator.ui.activities.maalmodule.TotalMaalActivity
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel

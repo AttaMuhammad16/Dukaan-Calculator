@@ -6,9 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dukaancalculator.R
-import com.dukaancalculator.databinding.FragmentMaalBinding
-import com.dukaancalculator.databinding.FragmentMoreBinding
+import com.atta.dukaancalculator.databinding.FragmentMoreBinding
 import com.dukaancalculator.ui.activities.kharchamodule.KharchaActivity
 import com.dukaancalculator.ui.activities.reports.ReportsActivity
 import com.lymors.lycommons.utils.MyExtensions.viewBinding

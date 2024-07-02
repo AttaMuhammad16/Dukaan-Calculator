@@ -2,30 +2,25 @@ package com.dukaancalculator.ui.activities.loginsignup
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityLoginBinding
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.signInWithGoogle
 import com.dukaancalculator.Utils.MyUtils.signInWithGoogleFirebase
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityLoginBinding
 import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
 import com.google.android.gms.common.api.ApiException
-import com.google.firebase.auth.FacebookAuthProvider
 import com.google.firebase.auth.FirebaseAuth
 import com.lymors.lycommons.utils.MyExtensions.showToast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
-import org.json.JSONObject
 import javax.inject.Inject
-import kotlin.math.log
 
 @AndroidEntryPoint
 class LoginActivity : AppCompatActivity() {

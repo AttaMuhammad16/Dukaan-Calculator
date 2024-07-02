@@ -7,7 +7,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.dukaancalculator.databinding.FragmentUddharBinding
+import com.atta.dukaancalculator.databinding.FragmentUddharBinding
 import com.dukaancalculator.ui.activities.udhharmodule.UddharForMaalActivity
 import com.dukaancalculator.ui.activities.udhharmodule.UddharForSaleActivity
 import com.dukaancalculator.ui.viewmodel.MainViewModel

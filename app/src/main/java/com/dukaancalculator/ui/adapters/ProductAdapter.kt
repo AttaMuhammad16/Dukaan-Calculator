@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import android.widget.EditText
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 
 class ProductAdapter(context: Context, private val products: List<ProductModel>) : ArrayAdapter<ProductModel>(context, 0, products) {

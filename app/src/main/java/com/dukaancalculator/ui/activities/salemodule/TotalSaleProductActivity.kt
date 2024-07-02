@@ -14,14 +14,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityTotalSaleProductBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils.calculateAmount
 import com.dukaancalculator.Utils.MyUtils.calculatePercentageChange
 import com.dukaancalculator.Utils.MyUtils.getCurrentDateTime
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityTotalSaleProductBinding
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.dukaancalculator.ui.viewmodel.SaleViewModel

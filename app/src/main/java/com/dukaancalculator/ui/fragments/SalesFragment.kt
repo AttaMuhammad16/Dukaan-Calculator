@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.FragmentSalesBinding
 import com.dukaancalculator.Utils.MyUtils.logT
-import com.dukaancalculator.databinding.FragmentSalesBinding
 import com.dukaancalculator.ui.activities.salemodule.TotalSaleProductActivity
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.dukaancalculator.ui.viewmodel.SaleViewModel
@@ -179,6 +179,10 @@ class SalesFragment : Fragment() {
         val df = DecimalFormat("#.##")
         df.roundingMode = RoundingMode.CEILING
         return df.format(number)
+    }
+
+    override fun onSaveInstanceState(outState: Bundle) {
+//        super.onSaveInstanceState(outState)
     }
 
 }

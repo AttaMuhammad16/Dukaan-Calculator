@@ -25,7 +25,7 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
-        android:name=".App"
+        android:name="com.dukaancalculator.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -36,76 +36,76 @@
         android:theme="@style/Theme.DukaanCalculator"
         tools:targetApi="31">
         <activity
-            android:name=".ui.activities.reports.IsSaleOrMaalUddharActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.IsSaleOrMaalUddharActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.maalreport.ViewMaalReportActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.maalreport.ViewMaalReportActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.maalreport.MaalReportActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.maalreport.MaalReportActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.maalreport.SuppliersActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.maalreport.SuppliersActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.salereport.ViewSaleReportActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.salereport.ViewSaleReportActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.salereport.CustomersActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.salereport.CustomersActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.salereport.SaleReportActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.salereport.SaleReportActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.reports.ReportsActivity"
+            android:name="com.dukaancalculator.ui.activities.reports.ReportsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.kharchamodule.KharchaActivity"
+            android:name="com.dukaancalculator.ui.activities.kharchamodule.KharchaActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.udhharmodule.UddharForMaalActivity"
+            android:name="com.dukaancalculator.ui.activities.udhharmodule.UddharForMaalActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.udhharmodule.UddharForSaleActivity"
+            android:name="com.dukaancalculator.ui.activities.udhharmodule.UddharForSaleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.maalmodule.MaalBankPaymentActivity"
+            android:name="com.dukaancalculator.ui.activities.maalmodule.MaalBankPaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.maalmodule.MaalReceiptActivity"
+            android:name="com.dukaancalculator.ui.activities.maalmodule.MaalReceiptActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.maalmodule.MaalNewSaleActivity"
+            android:name="com.dukaancalculator.ui.activities.maalmodule.MaalNewSaleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.maalmodule.TotalMaalActivity"
+            android:name="com.dukaancalculator.ui.activities.maalmodule.TotalMaalActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.salemodule.BankPaymentScreen"
+            android:name="com.dukaancalculator.ui.activities.salemodule.BankPaymentScreen"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.salemodule.ReceiptActivity"
+            android:name="com.dukaancalculator.ui.activities.salemodule.ReceiptActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.salemodule.NewSaleActivity"
+            android:name="com.dukaancalculator.ui.activities.salemodule.NewSaleActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.salemodule.TotalSaleProductActivity"
+            android:name="com.dukaancalculator.ui.activities.salemodule.TotalSaleProductActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.loginsignup.MoreDetailsActivity"
+            android:name="com.dukaancalculator.ui.activities.loginsignup.MoreDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.loginsignup.SignUpActivity"
+            android:name="com.dukaancalculator.ui.activities.loginsignup.SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.loginsignup.LoginActivity"
+            android:name="com.dukaancalculator.ui.activities.loginsignup.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.intro.IntroActivity"
+            android:name="com.dukaancalculator.ui.activities.intro.IntroActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.activities.intro.SplashScreen"
+            android:name="com.dukaancalculator.ui.activities.intro.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -114,7 +114,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.activities.salemodule.MainActivity"
+            android:name="com.dukaancalculator.ui.activities.salemodule.MainActivity"
             android:exported="true">
 
             <!-- <intent-filter> -->

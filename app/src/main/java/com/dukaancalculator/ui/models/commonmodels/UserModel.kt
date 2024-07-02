@@ -1,7 +1,5 @@
 package com.dukaancalculator.ui.models.commonmodels
 
-import com.dukaancalculator.ui.models.commonmodels.ParentModel
-
 data class UserModel(
     override var key: String="",
     var email:String="",

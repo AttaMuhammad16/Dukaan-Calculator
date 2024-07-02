@@ -1,19 +1,17 @@
 package com.dukaancalculator.ui.activities.maalmodule
 
 import android.annotation.SuppressLint
-import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityMaalReceiptBinding
+import com.atta.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityMaalReceiptBinding
-import com.dukaancalculator.databinding.SampleProductRowBinding
-import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.viewmodel.MaalViewModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.lymors.lycommons.utils.MyExtensions.showToast
@@ -134,9 +132,6 @@ class MaalReceiptActivity : AppCompatActivity() {
         }
 
         binding.deleteBtn.setOnClickListener{
-            val i = Intent(this, MainActivity::class.java)
-            i.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
-            startActivity(i)
             finish()
         }
 

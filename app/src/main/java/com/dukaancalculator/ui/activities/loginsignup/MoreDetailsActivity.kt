@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityMoreDetailsBinding
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityMoreDetailsBinding
 import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.models.commonmodels.UserModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
@@ -23,7 +23,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class MoreDetailsActivity : AppCompatActivity() {
-    lateinit var binding:ActivityMoreDetailsBinding
+    lateinit var binding: ActivityMoreDetailsBinding
     @Inject
     lateinit var mainViewModel: MainViewModel
     @Inject

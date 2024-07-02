@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityViewMaalReportBinding
+import com.atta.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityViewMaalReportBinding
-import com.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.ui.models.maalmodels.MaalReportModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
@@ -22,7 +22,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class ViewMaalReportActivity : AppCompatActivity() {
-    lateinit var binding:ActivityViewMaalReportBinding
+    lateinit var binding: ActivityViewMaalReportBinding
     @Inject
     lateinit var auth: FirebaseAuth
     @Inject
@@ -44,7 +44,7 @@ class ViewMaalReportActivity : AppCompatActivity() {
             model.total=(model.productPrice.toFloat() * model.productQuantity.toFloat()).toString()
         }
 
-        binding.recyclerview.setData(maalReportModel.listOfProductModel, SampleProductRowBinding::inflate){binding, item, position ->
+        binding.recyclerview.setData(maalReportModel.listOfProductModel, SampleProductRowBinding::inflate){ binding, item, position ->
             binding.name.text = item.productName
             binding.price.text = item.productPrice
             binding.qty.text = item.productQuantity

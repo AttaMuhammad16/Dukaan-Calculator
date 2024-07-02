@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivitySignUpBinding
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivitySignUpBinding
 import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.dukaancalculator.ui.models.commonmodels.UserModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel

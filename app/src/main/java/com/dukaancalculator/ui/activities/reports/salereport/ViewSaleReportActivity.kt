@@ -4,12 +4,12 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityViewSaleReportBinding
+import com.atta.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityViewSaleReportBinding
-import com.dukaancalculator.databinding.SampleProductRowBinding
 import com.dukaancalculator.ui.models.salemodels.SaleReportModel
 import com.lymors.lycommons.utils.MyExtensions.showToast
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,7 +20,7 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class ViewSaleReportActivity : AppCompatActivity() {
 
-    lateinit var binding:ActivityViewSaleReportBinding
+    lateinit var binding: ActivityViewSaleReportBinding
     var bundleSaleReportModel:SaleReportModel?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -44,7 +44,7 @@ class ViewSaleReportActivity : AppCompatActivity() {
 
             binding.currentDateAndTime.text=date
 
-            binding.recyclerview.setData(productModelList, SampleProductRowBinding::inflate){binding, item, position ->
+            binding.recyclerview.setData(productModelList, SampleProductRowBinding::inflate){ binding, item, position ->
                 binding.name.text = item.productName
                 binding.price.text = item.productPrice
                 binding.qty.text = item.productQuantity

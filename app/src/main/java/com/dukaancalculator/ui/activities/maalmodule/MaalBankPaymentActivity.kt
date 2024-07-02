@@ -1,9 +1,7 @@
 package com.dukaancalculator.ui.activities.maalmodule
 
-import android.Manifest
 import android.annotation.SuppressLint
 import android.app.AlertDialog
-import android.content.pm.PackageManager
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
@@ -12,27 +10,21 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Spinner
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.AppCompatSpinner
-import androidx.core.app.ActivityCompat
-import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityMaalBankPaymentBinding
+import com.atta.dukaancalculator.databinding.MaalBankPaymentDetailSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.getCurrentDateTime
 import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityMaalBankPaymentBinding
-import com.dukaancalculator.databinding.MaalBankPaymentDetailSampleRowBinding
 import com.dukaancalculator.ui.models.maalmodels.MaalBankDetailsModel
-import com.dukaancalculator.ui.models.salemodels.BankDetailsModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
-import com.lymors.lycommons.utils.MyExtensions.setStatusBarColor
 import com.lymors.lycommons.utils.MyExtensions.showToast
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
@@ -50,7 +42,7 @@ class MaalBankPaymentActivity : AppCompatActivity() {
     lateinit var mainViewModel: MainViewModel
 
 
-    lateinit var binding:ActivityMaalBankPaymentBinding
+    lateinit var binding: ActivityMaalBankPaymentBinding
 
     var path=""
     var selectedItem=""
@@ -78,7 +70,8 @@ class MaalBankPaymentActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             mainViewModel.maalBankDetailFlow.collect{
-                binding.recyclerView.setData(it,MaalBankPaymentDetailSampleRowBinding::inflate){binding, item, position ->
+                binding.recyclerView.setData(it,
+                    MaalBankPaymentDetailSampleRowBinding::inflate){ binding, item, position ->
 
                     binding.accountTypeTv.text="AccountType: ${item.accountType}"
                     binding.payedViaTv.text="Payed Via: ${item.payedVia}"

@@ -15,13 +15,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityBankPaymentScreenBinding
 import com.dukaancalculator.Utils.MyConstants.getSaleBankDetailsPath
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.sendSMS
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityBankPaymentScreenBinding
 import com.dukaancalculator.ui.models.salemodels.BankDetailsModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
@@ -36,7 +36,7 @@ class BankPaymentScreen : AppCompatActivity() {
     @Inject
     lateinit var mainViewModel: MainViewModel
 
-    lateinit var binding:ActivityBankPaymentScreenBinding
+    lateinit var binding: ActivityBankPaymentScreenBinding
 
     @Inject
     lateinit var auth:FirebaseAuth

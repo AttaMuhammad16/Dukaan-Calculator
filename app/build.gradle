@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace 'com.dukaancalculator'
+    namespace 'com.atta.dukaancalculator'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.dukaancalculator"
+        applicationId "com.atta.dukaancalculator"
         minSdk 24
         targetSdk 34
         versionCode 1

@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityUddharForMaalBinding
+import com.atta.dukaancalculator.databinding.MaalRemainingPaymentSampleRowBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.getFormattedDateAndTime
@@ -12,8 +14,6 @@ import com.dukaancalculator.Utils.MyUtils.setData
 import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityUddharForMaalBinding
-import com.dukaancalculator.databinding.MaalRemainingPaymentSampleRowBinding
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
@@ -28,7 +28,7 @@ class UddharForMaalActivity : AppCompatActivity() {
     @Inject
     lateinit var mainViewModel: MainViewModel
 
-    lateinit var binding:ActivityUddharForMaalBinding
+    lateinit var binding: ActivityUddharForMaalBinding
 
     var path=""
 
@@ -56,7 +56,8 @@ class UddharForMaalActivity : AppCompatActivity() {
             val filteredList = list.filter { it.uddharOrDiscount == "Uddhar" }
             val againFiltered = filteredList.filter { it.uddharOrDiscount != "done" }
 
-            binding.recyclerView.setData(againFiltered,MaalRemainingPaymentSampleRowBinding::inflate){binding, item, position ->
+            binding.recyclerView.setData(againFiltered,
+                MaalRemainingPaymentSampleRowBinding::inflate){ binding, item, position ->
 
                 binding.supplierName.text="Supplier Name: ${item.supplierName}"
                 binding.supplierPhoneNumber.text="Supplier PhoneNumber: ${item.supplierPhoneNumber}"

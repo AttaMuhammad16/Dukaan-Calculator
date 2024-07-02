@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.viewpager.widget.PagerAdapter
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
 import com.dukaancalculator.ui.models.commonmodels.IntroModel
 
 class ViewAdapter(private val context: Context) : PagerAdapter() {

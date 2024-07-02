@@ -29,7 +29,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewbinding.ViewBinding
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.firebase.auth.FirebaseAuth

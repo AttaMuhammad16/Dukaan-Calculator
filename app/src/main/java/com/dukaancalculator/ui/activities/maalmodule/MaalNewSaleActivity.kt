@@ -15,13 +15,13 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityMaalNewSaleBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyConstants.getMaalReportPath
 import com.dukaancalculator.Utils.MyUtils
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityMaalNewSaleBinding
 import com.dukaancalculator.ui.models.commonmodels.ProductModel
 import com.dukaancalculator.ui.models.maalmodels.DeliveryInformationModel
 import com.dukaancalculator.ui.models.maalmodels.MaalReportModel
@@ -166,7 +166,8 @@ class MaalNewSaleActivity : AppCompatActivity() {
 
             }else{
 
-                val alert=androidx.appcompat.app.AlertDialog.Builder(this@MaalNewSaleActivity).setView(R.layout.ask_uddhar_or_discount_dialog).show()
+                val alert=androidx.appcompat.app.AlertDialog.Builder(this@MaalNewSaleActivity).setView(
+                    R.layout.ask_uddhar_or_discount_dialog).show()
                 val uddharTv=alert.findViewById<TextView>(R.id.uddharTv)
                 val discountTv=alert.findViewById<TextView>(R.id.discountTv)
 

@@ -5,14 +5,13 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.atta.dukaancalculator.databinding.ActivityReportsBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyUtils.sendMessageToWhatsApp
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityReportsBinding
 import com.dukaancalculator.ui.activities.kharchamodule.KharchaActivity
 import com.dukaancalculator.ui.activities.reports.maalreport.SuppliersActivity
 import com.dukaancalculator.ui.activities.reports.salereport.CustomersActivity
-import com.dukaancalculator.ui.activities.reports.salereport.SaleReportActivity
 import com.dukaancalculator.ui.viewmodel.MainViewModel
 import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint

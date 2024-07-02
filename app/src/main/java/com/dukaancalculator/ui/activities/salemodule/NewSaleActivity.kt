@@ -15,7 +15,8 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
+import com.atta.dukaancalculator.databinding.ActivityNewSaleBinding
 import com.dukaancalculator.Utils.MyConstants
 import com.dukaancalculator.Utils.MyConstants.getNewSalePath
 import com.dukaancalculator.Utils.MyConstants.getSaleReportPath
@@ -26,7 +27,6 @@ import com.dukaancalculator.Utils.MyUtils.showProgressDialog
 import com.dukaancalculator.Utils.MyUtils.showSmsDialog
 import com.dukaancalculator.Utils.MyUtils.smsPermission
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
-import com.dukaancalculator.databinding.ActivityNewSaleBinding
 import com.dukaancalculator.ui.models.salemodels.NewSaleModel
 import com.dukaancalculator.ui.models.salemodels.SaleReportModel
 import com.dukaancalculator.ui.viewmodel.MainViewModel
@@ -42,7 +42,7 @@ import javax.inject.Inject
 
 @AndroidEntryPoint
 class NewSaleActivity : AppCompatActivity() {
-    lateinit var binding:ActivityNewSaleBinding
+    lateinit var binding: ActivityNewSaleBinding
     @Inject
     lateinit var mainViewModel: MainViewModel
 

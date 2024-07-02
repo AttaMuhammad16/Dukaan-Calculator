@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import com.dukaancalculator.R
+import com.atta.dukaancalculator.R
 import com.dukaancalculator.Utils.MyUtils.statusBarColor
 import com.dukaancalculator.ui.activities.salemodule.MainActivity
 import com.google.firebase.auth.FirebaseAuth
