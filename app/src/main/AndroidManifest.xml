@@ -13,13 +13,6 @@
         android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
 
-    <uses-permission
-        android:name="android.permission.SEND_SMS"
-        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
-    <uses-permission
-        android:name="android.permission.CALL_PHONE"
-        tools:ignore="PermissionImpliesUnsupportedChromeOsHardware" />
-
 
     <application
         android:name="com.dukaancalculator.App"
@@ -34,75 +27,99 @@
         tools:targetApi="31">
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.IsSaleOrMaalUddharActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.maalreport.ViewMaalReportActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.maalreport.MaalReportActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.maalreport.SuppliersActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.salereport.ViewSaleReportActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.salereport.CustomersActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.salereport.SaleReportActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.reports.ReportsActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.kharchamodule.KharchaActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.udhharmodule.UddharForMaalActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.udhharmodule.UddharForSaleActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.maalmodule.MaalBankPaymentActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.maalmodule.MaalReceiptActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.maalmodule.MaalNewSaleActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.maalmodule.TotalMaalActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.salemodule.BankPaymentScreen"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.salemodule.ReceiptActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.salemodule.NewSaleActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.salemodule.TotalSaleProductActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.loginsignup.MoreDetailsActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.loginsignup.SignUpActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.loginsignup.LoginActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.intro.IntroActivity"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.dukaancalculator.ui.activities.intro.SplashScreen"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -112,14 +129,8 @@
         </activity>
         <activity
             android:name="com.dukaancalculator.ui.activities.salemodule.MainActivity"
-            android:exported="true">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+            android:screenOrientation="portrait"
+            android:exported="false">
         </activity>
 
         <meta-data

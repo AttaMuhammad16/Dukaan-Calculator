@@ -315,23 +315,37 @@ object MyUtils {
     }
 
 
+//    fun Context.sendSMS(phoneNumber: String, message: String) {
+//        try {
+//            val smsManager: SmsManager = SmsManager.getDefault()
+//            val parts = smsManager.divideMessage(message)
+//            smsManager.sendMultipartTextMessage(phoneNumber, null, parts, null, null)
+//            Toast.makeText(this, "SMS sent successfully", Toast.LENGTH_SHORT).show()
+//        } catch (e: Exception) {
+//            Toast.makeText(this, "SMS failed to send", Toast.LENGTH_SHORT).show()
+//            e.printStackTrace()
+//            Log.i("TAG", "sendSMS:${e.message}")
+//        }
+//    }
+
     fun Context.sendSMS(phoneNumber: String, message: String) {
-        try {
-            val smsManager: SmsManager = SmsManager.getDefault()
-            val parts = smsManager.divideMessage(message)
-            smsManager.sendMultipartTextMessage(phoneNumber, null, parts, null, null)
-            Toast.makeText(this, "SMS sent successfully", Toast.LENGTH_SHORT).show()
-        } catch (e: Exception) {
-            Toast.makeText(this, "SMS failed to send", Toast.LENGTH_SHORT).show()
-            e.printStackTrace()
-            Log.i("TAG", "sendSMS:${e.message}")
+        val intent = Intent(Intent.ACTION_SENDTO).apply {
+            data = Uri.parse("smsto:$phoneNumber") // This ensures only SMS apps respond
+            putExtra("sms_body", message)
         }
+        startActivity(intent)
     }
 
 
+//    fun Context.makeACall(phoneNumber: String){
+//        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$phoneNumber"))
+//        startActivity(intent)
+//    }
 
     fun Context.makeACall(phoneNumber: String){
-        val intent = Intent(Intent.ACTION_CALL, Uri.parse("tel:$phoneNumber"))
+        val intent = Intent(Intent.ACTION_DIAL).apply {
+            data = Uri.parse("tel:$phoneNumber")
+        }
         startActivity(intent)
     }
 
