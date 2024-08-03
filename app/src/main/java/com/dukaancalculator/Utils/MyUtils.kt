@@ -65,7 +65,6 @@ import kotlin.reflect.full.memberProperties
 
 object MyUtils {
 
-
     fun String.containsAny(list:List<String> , ignoreCase:Boolean = true):Boolean{
         list.forEach {
             if (this.contains(it , ignoreCase)){
