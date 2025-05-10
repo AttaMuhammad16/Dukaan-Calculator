@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject
 
+
 @SuppressLint("CustomSplashScreen")
 @AndroidEntryPoint
 class SplashScreen : AppCompatActivity() {
@@ -33,6 +34,7 @@ class SplashScreen : AppCompatActivity() {
                 finish()
             }
         },3000)
+
 
     }
 }

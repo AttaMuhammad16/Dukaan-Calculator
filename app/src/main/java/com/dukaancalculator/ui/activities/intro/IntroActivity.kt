@@ -16,11 +16,12 @@ class IntroActivity : AppCompatActivity() {
         setContentView(binding.root)
         statusBarColor()
 
-        binding.dots.setViewPager(binding.viewPager)
         val viewAdapter=ViewAdapter(this@IntroActivity)
         binding.viewPager.adapter=viewAdapter
+        binding.dots.setViewPager(binding.viewPager)
         binding.loginSignUpBtn.setOnClickListener{
             startActivity(Intent(this@IntroActivity,LoginActivity::class.java))
         }
+
     }
 }

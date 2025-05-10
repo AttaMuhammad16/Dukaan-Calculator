@@ -31,9 +31,11 @@ import kotlinx.coroutines.launch
 import java.util.UUID
 import javax.inject.Inject
 
+
 @AndroidEntryPoint
 class TotalMaalActivity : AppCompatActivity() {
     lateinit var binding: ActivityTotalMaalBinding
+
     @Inject
     lateinit var mainViewModel: MainViewModel
 

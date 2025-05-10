@@ -19,9 +19,9 @@
 
     <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
         android:id="@+id/dots"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="@dimen/_20sdp"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         app:dotsColor="@color/mint_green"
         app:dotsSize="@dimen/_15sdp"
         android:layout_marginBottom="@dimen/_10sdp"

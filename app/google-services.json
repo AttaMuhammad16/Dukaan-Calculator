@@ -1,42 +1,50 @@
 {
   "project_info": {
-    "project_number": "661829079565",
-    "firebase_url": "https://dukaan-calculator-c05e5-default-rtdb.firebaseio.com",
-    "project_id": "dukaan-calculator-c05e5",
-    "storage_bucket": "dukaan-calculator-c05e5.appspot.com"
+    "project_number": "322442038233",
+    "firebase_url": "https://dukaan-calculator-713c2-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "dukaan-calculator-713c2",
+    "storage_bucket": "dukaan-calculator-713c2.firebasestorage.app"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:661829079565:android:ec817b712deb84bc307b44",
+        "mobilesdk_app_id": "1:322442038233:android:3f77cfd4ccb6f6958427c8",
         "android_client_info": {
           "package_name": "com.atta.dukaancalculator"
         }
       },
       "oauth_client": [
         {
-          "client_id": "661829079565-t3qtc5dk7as34ju3cnrdjudtijgnud9f.apps.googleusercontent.com",
+          "client_id": "322442038233-gok28hs6rtm73g4v173rknhvvnoh4e5c.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.atta.dukaancalculator",
-            "certificate_hash": "26391a880dac3e0b5b95918c9017cc2e43e19d9a"
+            "certificate_hash": "34f27821586610fe9a99bca1f1ca93d20b6c135d"
           }
         },
         {
-          "client_id": "661829079565-v1g3sr64n2sfead7rkspf1rdtgfj7q53.apps.googleusercontent.com",
+          "client_id": "322442038233-qnn7ko5p1hqmrjg8sc3q2pqmdqhvutp9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.atta.dukaancalculator",
+            "certificate_hash": "b2f2aa9fa177d4cf26861b45c185a168ddefbdd8"
+          }
+        },
+        {
+          "client_id": "322442038233-4rkjh2opfduj0vlotpic0etmi94pem8n.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBkHIx2V8UVqeppC0cOe7KLxsRic1X27jg"
+          "current_key": "AIzaSyBxgx_oyGhFd-L_j0WCjyo5EaQXvCOv-EE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "661829079565-v1g3sr64n2sfead7rkspf1rdtgfj7q53.apps.googleusercontent.com",
+              "client_id": "322442038233-4rkjh2opfduj0vlotpic0etmi94pem8n.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -83,7 +83,7 @@ dependencies {
 
 
     //intro
-    implementation 'com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3'
+    implementation 'com.tbuonomo:dotsindicator:5.1.0'
 
 //    MyUtil
     implementation ("com.github.NaveedAshraf1:commonslib:1.0.9")

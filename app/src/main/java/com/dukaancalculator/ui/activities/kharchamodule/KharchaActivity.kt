@@ -281,7 +281,6 @@ class KharchaActivity : AppCompatActivity() {
                 topConstraint.setBackgroundColor(color)
                 categoryFirstCharacterTv.text = selectedExpenseCategoryModel.firstLetter
                 selectedCategory = selectedExpenseCategoryModel.categoryName
-
                 view?.let {
                     it.findViewById<ConstraintLayout>(R.id.itemConstraintBack)?.setBackgroundColor(color)
                     it.findViewById<ConstraintLayout>(R.id.topItemConstraint)?.setBackgroundColor(color)

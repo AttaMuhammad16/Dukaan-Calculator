@@ -22,10 +22,10 @@
             <InsightsFilterSettings>
               <option name="connection">
                 <ConnectionSetting>
-                  <option name="appId" value="com.dukaancalculator" />
-                  <option name="mobileSdkAppId" value="1:785209996040:android:432b556e8f5ecd52b372bd" />
-                  <option name="projectId" value="dukaan-calculator" />
-                  <option name="projectNumber" value="785209996040" />
+                  <option name="appId" value="com.atta.dukaancalculator" />
+                  <option name="mobileSdkAppId" value="1:322442038233:android:3f77cfd4ccb6f6958427c8" />
+                  <option name="projectId" value="dukaan-calculator-713c2" />
+                  <option name="projectNumber" value="322442038233" />
                 </ConnectionSetting>
               </option>
               <option name="signal" value="SIGNAL_UNSPECIFIED" />

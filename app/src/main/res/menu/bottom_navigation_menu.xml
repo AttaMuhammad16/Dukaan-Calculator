@@ -11,14 +11,11 @@
         android:icon="@drawable/cash_flow"
         android:iconTint="@color/white"
         android:title="Maal" />
-
     <item
         android:id="@+id/uddhar"
         android:icon="@drawable/report"
         android:iconTint="@color/white"
         android:title="Udhaar"  />
-
-
     <item
         android:id="@+id/more"
         android:icon="@drawable/ic_more"
